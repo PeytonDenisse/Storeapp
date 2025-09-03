@@ -9,6 +9,7 @@ namespace StoreAPI.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class OrderCOntroller : ControllerBase
+    
     {
         private readonly StoreDbContext _context;
 
@@ -26,11 +27,8 @@ namespace StoreAPI.Controllers
             return Ok(orders);
         }
 
-        [HttpGet]
-        public async Task<ActionResult> CreateOrder(
-
-        [FromBody]OrderCDTO order
-                )
+        [HttpPost]
+        public async Task<ActionResult> CreateOrder([FromBody] OrderCDTO order)
         {
             var newOrder = new Order()
             {
@@ -38,9 +36,11 @@ namespace StoreAPI.Controllers
                 CreatedAt = DateTime.Now,
                 Total = order.Total,
             };
+
             _context.Order.Add(newOrder);
             await _context.SaveChangesAsync();
-            return Ok();
+            
+            return CreatedAtAction(nameof(GetOrders), new { id = newOrder.Id }, newOrder);
         }
     }
 }

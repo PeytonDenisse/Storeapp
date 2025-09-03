@@ -2,6 +2,7 @@ using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using StoreApi;
 using StoreAPI;
+using Wkhtmltopdf.NetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("sqlServer");
@@ -10,13 +11,15 @@ var connectionString = builder.Configuration.GetConnectionString("sqlServer");
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+//builder.Services.AddOpenApi();
 builder.Services.AddDbContext<StoreDbContext>(o => 
     o.UseSqlServer(connectionString)
 );
 
 builder.Services.AddSwaggerGen();
+builder.Services.AddWkhtmltopdf();
 builder.Services.AddControllers()
+    
     .AddJsonOptions(o =>
     {
         o.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;

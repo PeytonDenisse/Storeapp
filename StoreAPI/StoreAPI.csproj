@@ -18,6 +18,7 @@
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.3" />
+        <PackageReference Include="Wkhtmltopdf.NetCore" Version="5.0.2-preview" />
     </ItemGroup>
 
     <ItemGroup>
@@ -29,5 +30,17 @@
     <ItemGroup>
       <ProjectReference Include="..\StoreApi.Models\StoreApi.Models.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+        <None Include="Rotativa\Linux\wkhtmltopdf" CopyToOutputDirectory="PreserveNewest" />
+
+        <None Include="Rotativa\Mac\wkhtmltopdf" CopyToOutputDirectory="PreserveNewest" />
+
+        <None Include="Rotativa\Windows\wkhtmltopdf.exe" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+
+
+
 
 </Project>
