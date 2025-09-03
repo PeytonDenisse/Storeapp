@@ -1,0 +1,11 @@
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\bin\Debug\net9.0\StoreApi.Models.deps.json
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\bin\Debug\net9.0\StoreApi.Models.dll
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\bin\Debug\net9.0\StoreApi.Models.pdb
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\StoreApi.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\StoreApi.Models.AssemblyInfoInputs.cache
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\StoreApi.Models.AssemblyInfo.cs
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\StoreApi.Models.csproj.CoreCompileInputs.cache
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\StoreApi.Models.dll
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\refint\StoreApi.Models.dll
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\StoreApi.Models.pdb
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\ref\StoreApi.Models.dll
