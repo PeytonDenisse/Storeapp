@@ -204,6 +204,50 @@ namespace StoreAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Store");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Plaza Mayor León",
+                            Latitude = 21.154,
+                            Longitude = -101.69459999999999
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Centro Max",
+                            Latitude = 21.094799999999999,
+                            Longitude = -101.6417
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Plaza Galerías Las Torres",
+                            Latitude = 21.121099999999998,
+                            Longitude = -101.6613
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Outlet Mulza",
+                            Latitude = 21.0459,
+                            Longitude = -101.58620000000001
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "La Gran Plaza León",
+                            Latitude = 21.128,
+                            Longitude = -101.6827
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Altacia",
+                            Latitude = 21.128,
+                            Longitude = -102.0
+                        });
                 });
 
             modelBuilder.Entity("StoreApi.Models.Entities.SystemUser", b =>

@@ -10,5 +10,7 @@ public class Order
     public DateTime CreatedAt { get; set; }
     
     public List<Product> Products { get; set; }
+    public List<Invoice> Invoices { get; set; } = new();
+
    
 }

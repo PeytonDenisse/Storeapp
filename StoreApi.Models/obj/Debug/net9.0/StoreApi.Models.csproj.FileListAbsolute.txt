@@ -9,3 +9,4 @@ C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\StoreApi.Model
 C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\refint\StoreApi.Models.dll
 C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\StoreApi.Models.pdb
 C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\ref\StoreApi.Models.dll
+C:\Users\rommy\StoreAPI\StoreAPI\StoreApi.Models\obj\Debug\net9.0\StoreApi.Models.sourcelink.json

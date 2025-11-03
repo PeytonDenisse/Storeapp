@@ -18,12 +18,22 @@ namespace StoreAPI.Controllers
             _context = context;
         }
 
+
+
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<ActionResult> GetAllStore()
         {
-            var store = await _context.Store.FirstOrDefaultAsync();
-            var result = await _generatePdf.GetPdf("Templates/StoreTemplate.cshtml",
-                "Saludos desde el controller");
+            var stores = await _context.Store.ToListAsync();
+            return Ok(stores);
+        }
+
+        [HttpGet("{id}/pdf")]
+        public async Task<IActionResult> GetStorePdf(int id)
+        {
+            var store = await _context.Store
+                .Include(s => s.Products)
+                .FirstOrDefaultAsync(s => s.Id == id);
+            var result = await _generatePdf.GetPdf("Templates/StoreTemplate.cshtml",store );
             return result;
         }
     }
