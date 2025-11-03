@@ -16,7 +16,7 @@ jobs:
         run: docker login -u "${{ secrets.DOCKER_USERNAME }}" -p "${{ secrets.DOCKER_PASSWORD }}"
 
       - name: Build Docker Image
-        run: docker build -t ´peytondenisse/store-api:${{ github.sha }} .
+        run: docker build -t peytondenisse/store-api:${{ github.sha }} .
 
       - name: Tag Latest
         run: docker tag peytondenisse/store-api:${{ github.sha }} peytondenisse/store-api:latest
