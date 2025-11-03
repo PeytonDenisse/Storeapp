@@ -7,8 +7,8 @@ RUN ls
 # Restore as distinct layers
 RUN dotnet restore
 # Build and publish a release
-RUN ls /App/Storeapp
-RUN dotnet publish /App/Storeapp/Storeapp.csproj -c Release -o /App/build
+RUN ls /App/StoreAPI
+RUN dotnet publish /App/StoreAPI/StoreAPI.csproj -c Release -o /App/build
 
 
 # Build runtime image
