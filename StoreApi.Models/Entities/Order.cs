@@ -9,8 +9,6 @@ public class Order
     public double Total { get; set; }
     public DateTime CreatedAt { get; set; }
     
-    public List<Product> Products { get; set; }
+    public List<OrderProduct> OrderProducts { get; set; }
     public List<Invoice> Invoices { get; set; } = new();
-
-   
 }

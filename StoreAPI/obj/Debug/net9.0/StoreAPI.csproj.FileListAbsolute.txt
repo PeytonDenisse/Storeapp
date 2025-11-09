@@ -584,3 +584,5 @@ C:\Users\rommy\StoreAPI\StoreAPI\StoreAPI\bin\Debug\net9.0\Rotativa\Mac\wkhtmlto
 C:\Users\rommy\StoreAPI\StoreAPI\StoreAPI\bin\Debug\net9.0\Rotativa\Windows\wkhtmltopdf.exe
 C:\Users\rommy\StoreAPI\StoreAPI\StoreAPI\obj\Debug\net9.0\StoreAPI.RazorAssemblyInfo.cache
 C:\Users\rommy\StoreAPI\StoreAPI\StoreAPI\obj\Debug\net9.0\StoreAPI.RazorAssemblyInfo.cs
+C:\Users\rommy\StoreAPI\StoreAPI\StoreAPI\bin\Debug\net9.0\OpenAI.dll
+C:\Users\rommy\StoreAPI\StoreAPI\StoreAPI\bin\Debug\net9.0\System.Net.ServerSentEvents.dll

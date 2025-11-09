@@ -25,4 +25,18 @@ jobs:
         run: |
           docker push peytondenisse/store-api:${{ github.sha }}
           docker push peytondenisse/store-api:latest
- 
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to AWS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST}}
+          username: ${{ secrets.USERNAME}}
+          key: ${{ secrets.SSH_KEY}}
+          script: |
+            docker pull peytondenisse/store-api:latest
+            cd containers
+            docker compose up -d
