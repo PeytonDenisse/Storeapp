@@ -248,12 +248,12 @@ namespace StoreAPI.Controllers
             if (string.IsNullOrWhiteSpace(openAIKey))
                 return StatusCode(500, new { error = "Falta configurar OpenAIKey." });
 
-            // Traer facturas (ajusta Includes si luego necesitas relaciones)
+            
             var invoices = await _context.Invoice
                 .AsNoTracking()
                 .ToListAsync();
 
-            // Proyección mínima para la IA
+            
             var summary = invoices.Select(i => new
             {
                 i.Id,
@@ -275,7 +275,7 @@ namespace StoreAPI.Controllers
                 apiKey: openAIKey
             );
 
-            // ⚠️ En el siguiente paso crearemos este método en tu Prompts.cs
+           
             var prompt = Prompts.GenerateInvoicesPrompt(jsonData);
 
             var result = await client.CompleteChatAsync(new[]
@@ -285,7 +285,7 @@ namespace StoreAPI.Controllers
 
             var aiText = result.Value.Content[0].Text?.Trim() ?? "error";
 
-            // Si es JSON válido lo regresamos tal cual; si no, { error: "<texto>" }
+            
             try
             {
                 using var doc = JsonDocument.Parse(aiText);
